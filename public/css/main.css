@@ -1,0 +1,833 @@
+*:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container_fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* Start app.blade.php */
+.nav_link {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 27px;
+    color: #000000!important;
+}
+
+.nav_item {
+    margin-right: 45px;
+}
+
+.log_item {
+    margin-right: 25px;
+}
+
+.btn_border_gradient {
+    width: max-content;
+    padding: 14px 47px!important;
+    background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(to right, #A861FF, #62D6F7) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+}
+
+.btn_gradient {
+    color: #ffffff!important;
+    width: max-content;
+    padding: 14px 47px!important;
+    background: linear-gradient(transparent, transparent) padding-box,
+    linear-gradient(to right, #A861FF, #62D6F7) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+}
+
+/*Footer*/
+.footer {
+    background-color: #F0F3F9;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow_us {
+    margin-bottom: 10px;
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D1A2E;
+}
+
+.footer_follow_us a {
+    margin-right: 30px;
+}
+
+.footer_copy_right {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #0D1A2E;
+}
+
+@media only screen and (max-width: 992px) {
+    .nav-item {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .footer_container {
+        display: unset;
+    }
+
+    .footer_follow_us {
+        margin-top: 20px;
+    }
+
+    .footer_follow_us a {
+        margin-right: 15px;
+    }
+}
+/* End app.blade.php */
+
+/* Start home.blade.php */
+
+/*banner*/
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    position:relative
+}
+
+.banner .container_fluid {
+    position: absolute;
+    left:0;
+    right:0;
+    top:50%;
+    text-align:left;
+    transform:translateY(-50%);
+}
+
+.banner_title {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 88px;
+    color: #0D1A2E;
+    margin-bottom: 20px;
+}
+
+.banner_text {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0D1A2E;
+    margin-bottom: 65px;
+}
+
+/*market_trend*/
+#market_trend {
+    margin-top: 75px;
+}
+.market_trend_title {
+    margin-bottom: 20px;
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 46px;
+    color: #0D1A2E;
+}
+
+.market_trend_table {
+
+}
+
+/*how_to_join_us*/
+#how_to_join_us {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.join_us_title {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 46px;
+    color: #0D1A2E;
+}
+
+.join_us_btn_container {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.join_us_btn_container .btn_border_gradient {
+    margin-right: 25px;
+}
+.join_us_btn_container .btn_gradient {
+    margin-left: 25px;
+}
+
+.step {
+    margin-top: 60px;
+}
+
+.step_text {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #0D1A2E;
+    max-width: 295px;
+    margin: 35px auto;
+}
+
+@media only screen and (max-width: 1400px) {
+    .banner_title {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #how_to_join_us {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    .banner_img_money {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #how_to_join_us {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .banner_title {
+        font-size: 28px;
+        margin-bottom: 10px;
+        line-height: 40px;
+    }
+
+    .banner_text {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .join_us_btn_container .btn_gradient,
+    .join_us_btn_container .btn_border_gradient {
+        margin: 0 auto;
+    }
+
+}
+/* End home.blade.php */
+
+/* Start table.blade.php */
+.table_view_more{
+    background-color: #F0F3F9;
+    text-align: center;
+}
+
+#more {
+    margin: 20px auto 15px;
+}
+
+.table_header th {
+    border-top: none;
+}
+
+.table_header_name {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D1A2E;
+    max-width: 150px;
+}
+
+.table_row_name {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0D1A2E;
+    margin-left: 30px;
+}
+
+.row_name {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B8395;
+    margin-left: 15px;
+}
+
+.table_row_price {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D1A2E;
+}
+
+.table_row_change {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    background: #A861FF;
+    background: -webkit-linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    background: -moz-linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    background: linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.table_body {
+    background-color: #F0F3F9;
+    border-bottom: 1px solid #3D4860;
+}
+
+.table th, .table td,
+.table thead th {
+    border: none!important;
+}
+
+.table_btn {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    background: #A861FF;
+    background: -webkit-linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    background: -moz-linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    background: linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 576px) {
+    .table_row_name,
+    .row_name {
+        margin-left: 0;
+    }
+
+    .table_img {
+        width: 30px;
+    }
+
+    .table_row_name {
+        font-size: 16px;
+    }
+
+    .row_name {
+        font-size: 12px;
+        line-height: 12px
+    }
+}
+/* End table.blade.php */
+
+/* Start register-modal.blade.php */
+.register-modal {
+    padding: 0!important;
+}
+.modal_dialog {
+    max-width: 655px;
+}
+
+.modal_body {
+    padding: 0 120px 30px;
+}
+
+.registerModal {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+    color: #0D1A2E;
+}
+
+._form_label {
+    margin-top: 25px;
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #0D1A2E;
+}
+
+.form-check-label{
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 17px;
+    text-align: center;
+    color: #9DA6B9;
+}
+
+.register_btn_container {
+    margin-top: 55px;
+    display: grid;
+    justify-content: center;
+}
+
+.btn_login{
+    background: #A861FF;
+    background: -webkit-linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    background: -moz-linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    background: linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form_bg_img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+}
+
+.input-group-prepend {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+    .modal_body {
+        padding: 0 15px 30px;
+    }
+
+    .registerModal {
+        font-size: 24px;
+    }
+}
+/* End register-modal.blade.php */
+
+/* Start order.blade.php */
+.order_banner {
+    background-image: url("../img/order_banner.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#order {
+    margin: 55px auto 90px;
+    max-width: 600px;
+}
+.order_container {
+    text-align: center;
+}
+.order_title {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 88px;
+    color: #0D1A2E;
+}
+
+.order_text {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #0D1A2E;
+}
+
+.order_label {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #0D1A2E;
+}
+
+.order_btn {
+    margin: 80px auto;
+    text-align: center;
+}
+
+.order_small {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 17px;
+    color: #0D1A2E;
+}
+
+input[type='radio']:after {
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    top: -2px;
+    left: -2px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #688092;
+    cursor: pointer;
+}
+
+input[type='radio']:checked:after {
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    top: -2px;
+    left: -2px;
+    position: relative;
+    background: linear-gradient(transparent, transparent) padding-box, linear-gradient(to right, #A861FF, #62D6F7) border-box;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #688092;
+    cursor: pointer;
+}
+
+.order_label_span {
+    margin: 0 15px;
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #0D1A2E;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+    #order {
+        margin: 30px auto;
+    }
+
+    .order_title {
+        font-size: 38px;
+    }
+}
+/* End order.blade.php */
+
+/* Start assets-browse.blade.php */
+#assets_browse_banner {
+    margin: 100px auto 0px;
+    position:relative;
+}
+
+.assets_browse_banner_text {
+    max-width: 550px;
+}
+
+/*my_portfolio*/
+#my_portfolio {
+    overflow-x: hidden;
+    padding: 0 15px;
+}
+.my_portfolio_title {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 46px;
+    color: #0D1A2E;
+}
+.my_portfolio_sort {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0D1A2E;
+    margin-top: 20px;
+}
+
+/*my_portfolio_table*/
+#my_portfolio_table {
+    margin: 85px auto 200px;
+}
+
+.btn_border_gradient_sale {
+    width: max-content;
+    padding: 14px 47px!important;
+    background: linear-gradient(#f0f3f9, #f0f3f9) padding-box,
+    linear-gradient(to right, #A861FF, #62D6F7) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+}
+
+.dropdown_table_btn {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(168, 97, 255, 0.2) 0%, rgba(98, 214, 247, 0.2) 100%);
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.dropdown_table_btn:after {
+    content: url("../img/icons/top.png");
+}
+
+.dropdown_down:after {
+     content: url("../img/icons/down.png");
+ }
+
+.dropdown_table_btn_container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.dropdown_table_btn_previouse,
+.dropdown_table_btn_next {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 5px 25px;
+}
+
+.dropdown_table_btn_previouse:before {
+    content: url("../img/icons/previouse.png");
+    margin-right: 11px;
+}
+
+.dropdown_table_btn_next:after {
+    content: url("../img/icons/next.png");
+    margin-left: 12px;
+}
+/* End assets-browse.blade.php */
+
+/* Start all-your-portfolio.blade.php */
+#assets_browse_banner {
+    margin: 100px auto 0;
+    position:relative;
+}
+
+.all_your_portfolio_bg {
+    background-image: url("../img/all-your-portfolio-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/*all-your-portfolio_table*/
+#all-your-portfolio_table {
+    margin: 115px auto 200px;
+    padding: 0 15px;
+}
+
+.all_your_portfolio_table_btn_container {
+    padding: 110px 0;
+    text-align: center;
+}
+
+.all_your_portfolio_table_container {
+    max-width: 500px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.total_sub {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 37px;
+    background: #A861FF;
+    background: -webkit-linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    background: -moz-linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    background: linear-gradient(to bottom right, #A861FF 0%, #62D6F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.total_sub_price_1,
+.total_sub_price_2,
+.total_sub_price_3 {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0D1A2E;
+}
+
+.btn_border_gradient_gray {
+    width: max-content;
+    padding: 14px 47px!important;
+    background: linear-gradient(#F0F3F9, #F0F3F9) padding-box, linear-gradient(to right, #A861FF, #62D6F7) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+}
+
+/* End all-your-portfolio.blade.php */
+
+/* Start contract-description.blade.php */
+.contract_description_text_container {
+    margin: 65px auto 145px;
+    padding: 0 15px;
+}
+
+.contract_description_text_container span {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto 0;
+}
+
+.contract_description_text_container input {
+    background: -webkit-linear-gradient(#A861FF, #62D6F7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contract_description_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0D1A2E;
+}
+
+/*contract_description_tab*/
+#contract_description_tab {
+    margin-bottom: 200px;
+    padding: 0 15px;
+}
+.tabset > input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+.tabset .tab-panel {
+    display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+    display: block;
+}
+
+.tabset > label {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 37px;
+    color: #0D1A2E;
+}
+
+.tabset > input:checked + label {
+    background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #A861FF, #62D6F7) border-box;
+    border-bottom: 1px solid #fff;
+    -webkit-border-top-left-radius: 25px;
+    -webkit-border-top-right-radius: 25px;
+    -moz-border-radius-topleft: 25px;
+    -moz-border-radius-topright: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-bottom: -1px;
+}
+
+.tab-panel {
+    padding: 50px 0;
+    border-top: 1px solid;
+    border-image: linear-gradient(45deg, #A861FF, #62D6F7) 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .contract_description_text_container,
+    #contract_description_tab {
+        margin-bottom: 100px;
+    }
+
+    .tabset > label {
+        font-size: 16px;
+        padding: 1px 15px;
+    }
+}
+
+/* End contract-description.blade.php */
