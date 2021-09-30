@@ -25,16 +25,11 @@
                     </div>
                     <div class="form-group">
                         <label class="_form_label" for="login_password">Password</label>
-                        <div class="input-group position-relative">
                             <input type="password" class="form-control" name="password" id="login_password" required>
-                            <div class="input-group-prepend">
-                                <span class="login-toggle-password">
-                                    <img src="{{ asset('img/icons/eye-off.png') }}" class="login_password_img img-fluid">
-                                    <img src="{{ asset('img/icons/eye.png') }}" class="login_password_img1 img-fluid d-none">
-                                </span>
-                            </div>
-                        </div>
-
+                            <span class="login-toggle-password">
+                                <img src="{{ asset('img/icons/eye-off.png') }}" class="login_password_img img-fluid">
+                                <img src="{{ asset('img/icons/eye.png') }}" class="login_password_img1 img-fluid d-none">
+                            </span>
                     </div>
 {{--                    <div class="form-check d-flex align-items-center">--}}
 {{--                        <input type="checkbox" class="form-check-input" name="term_of_service_login" id="term_of_service_login">--}}
@@ -45,7 +40,7 @@
                         <button type="button" class="btn btn_login nav-link nav_link" id="register_modal" data-toggle="modal" data-target="#registerModal">{{ __('Register') }}</button>
                     </div>
                     @if (Route::has('password.request'))
-                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                        <a class="btn btn_login nav-link nav_link" href="{{ route('password.request') }}">
                             {{ __('Forgot Your Password?') }}
                         </a>
                     @endif

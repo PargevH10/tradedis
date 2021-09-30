@@ -411,7 +411,7 @@ input::-webkit-inner-spin-button {
 }
 
 .register_btn_container {
-    margin-top: 55px;
+    margin-top: 45px;
     display: grid;
     justify-content: center;
 }
@@ -439,13 +439,23 @@ input::-webkit-inner-spin-button {
     z-index: 2;
 }
 
-.input-group-prepend {
-    position: absolute;
-    right: 5px;
+.toggle-password,
+.toggle-confirmPassword,
+.login-toggle-password {
+    float: right;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -130%);
     z-index: 5;
     cursor: pointer;
+}
+
+.error-valid {
+    position: absolute;
+}
+
+.form-check .error-valid {
+    margin-top: 40px;
+    left: 0;
 }
 
 @media only screen and (max-width: 576px) {
@@ -676,7 +686,6 @@ input[type='radio']:checked:after {
     background-image: url("../img/all-your-portfolio-banner.png");
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 /*all-your-portfolio_table*/
@@ -831,3 +840,29 @@ input[type='radio']:checked:after {
 }
 
 /* End contract-description.blade.php */
+
+/* Start email.blade.php */
+.container_password_reset {
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.password_reset {
+    padding: 235px 0;
+}
+
+@media only screen and (max-width: 1140px) {
+    .password_reset {
+        padding: 180px 0;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .password_reset {
+        padding: 160px 0;
+    }
+}
+
+/* End email.blade.php */
+

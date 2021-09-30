@@ -29,29 +29,18 @@
                     <div class="form-group">
                         <label class="_form_label" for="password">Password</label>
                         <input id="password" type="password" class="form-control" name="password" required autocomplete="new-password">
-                        <div class="input-group position-relative">
-{{--                            <input id="password" type="password" class="form-control" name="password" required autocomplete="new-password">--}}
-                            <div class="input-group-prepend">
-                                <span class="toggle-password">
-{{--                                    <img src="{{ asset('img/icons/eye-off.png') }}" class="password_img img-fluid">--}}
-{{--                                    <img src="{{ asset('img/icons/eye.png') }}" class="password_img1 img-fluid d-none">--}}
-                                </span>
-                            </div>
-                        </div>
-
+                        <span class="toggle-password">
+                            <img src="{{ asset('img/icons/eye-off.png') }}" class="password_img img-fluid">
+                            <img src="{{ asset('img/icons/eye.png') }}" class="password_img1 img-fluid d-none">
+                        </span>
                     </div>
                     <div class="form-group">
                         <label class="_form_label" for="confirmPassword">Confirm Password</label>
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                        <div class="input-group position-relative">
-{{--                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">--}}
-                            <div class="input-group-prepend">
-                                <span class="toggle-confirmPassword">
-{{--                                    <img src="{{ asset('img/icons/eye-off.png') }}" class="confirmPassword_img img-fluid">--}}
-{{--                                    <img src="{{ asset('img/icons/eye.png') }}" class="confirmPassword_img1 img-fluid d-none">--}}
-                                </span>
-                            </div>
-                        </div>
+                        <span class="toggle-confirmPassword">
+                            <img src="{{ asset('img/icons/eye-off.png') }}" class="confirmPassword_img img-fluid">
+                            <img src="{{ asset('img/icons/eye.png') }}" class="confirmPassword_img1 img-fluid d-none">
+                        </span>
                     </div>
                     <div class="form-check d-flex align-items-center">
                         <input type="checkbox" class="form-check-input" name="term_of_service" id="term_of_service_register">

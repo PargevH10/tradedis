@@ -15,7 +15,7 @@ $(".toggle-confirmPassword").on('click', function() {
     $(".confirmPassword_img").toggleClass("d-none");
     $(".confirmPassword_img1").toggleClass("d-block");
     $(this).toggleClass("fa-eye fa-eye-slash");
-    let input1 = $("#confirmPassword");
+    let input1 = $("#password-confirm");
     if (input1.attr("type") === "password") {
         input1.attr("type", "text");
     } else {
