@@ -75,7 +75,7 @@
                                 @guest
                                     @else
                                     <form action="/" method="get" class="text-center">
-                                        <button type="button" class="btn btn_border_gradient_sale">Sale</button>
+                                        <button type="button" class="btn btn_border_gradient_sale" data-toggle="modal" data-target="#orderModal">Sale</button>
                                         <button type="button" class="btn">
                                             <img src="{{ asset('img/icons/x.png') }}" class="img-fluid" alt="Delete">
                                         </button>

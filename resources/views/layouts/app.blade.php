@@ -22,6 +22,7 @@
 <body>
 @include('plugins/register-modal')
 @include('plugins/login-modal')
+@include('plugins/order-modal')
 <nav class="container_fluid navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="/">
         <img src="{{ asset('img/logo.png') }}" class="img-fluid">

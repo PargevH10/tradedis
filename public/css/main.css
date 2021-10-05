@@ -478,7 +478,6 @@ input::-webkit-inner-spin-button {
 }
 
 #order {
-    margin: 55px auto 90px;
     max-width: 600px;
 }
 .order_container {
@@ -488,7 +487,7 @@ input::-webkit-inner-spin-button {
     font-family: Titillium Web;
     font-style: normal;
     font-weight: bold;
-    font-size: 58px;
+    font-size: 36px;
     line-height: 88px;
     color: #0D1A2E;
 }
